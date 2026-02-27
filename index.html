@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mow-mentum | Prémium Kertgondozás</title>
+    <title>Mow-mentum | Prémium Kertgondozás 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .hero-bg { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1592419044706-39796d40f98c?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; }
+        .hero-bg { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1592419044706-39796d40f98c?auto=format&fit=crop&w=1350&q=80'); 
+            background-size: cover; 
+            background-position: center; 
+        }
         .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-slate-50 font-sans text-slate-900">
@@ -17,7 +22,7 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <i class="fa-solid fa-leaf text-green-600 text-3xl"></i>
-                <h1 class="text-2xl font-black tracking-tighter text-slate-800">MOW-MENTUM</h1>
+                <h1 class="text-2xl font-black tracking-tighter text-slate-800 uppercase">Mow-mentum</h1>
             </div>
             <div class="hidden md:flex space-x-8 font-medium">
                 <a href="#szolgaltatasok" class="hover:text-green-600 transition">Szolgáltatások</a>
@@ -28,97 +33,121 @@
 
     <header class="hero-bg h-[70vh] flex items-center justify-center text-center text-white px-4">
         <div class="max-w-3xl">
-            <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Profi kertápolás, <br><span class="text-green-400">gondtalan hétvégék.</span></h2>
-            <p class="text-lg md:text-xl mb-10 opacity-90 font-light">Akkumulátoros technológia, csendes munkavégzés, átlátható árazás.</p>
-            <a href="#foglalas" class="bg-yellow-400 text-green-900 px-10 py-4 rounded-xl text-lg font-bold hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-xl uppercase">Azonnali Foglalás</a>
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Profi kertápolás,<br><span class="text-green-400">gondtalan hétvégék.</span></h2>
+            <p class="text-lg md:text-xl mb-10 opacity-90 font-light">Akkumulátoros technológia, halk munkavégzés, rögzített árak.</p>
+            <a href="#foglalas" class="bg-yellow-400 text-green-900 px-10 py-4 rounded-xl text-lg font-bold hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-xl uppercase">Azonnali Ajánlatkérés</a>
         </div>
     </header>
 
     <section id="szolgaltatasok" class="py-24 container mx-auto px-4">
         <div class="text-center mb-16">
-            <h3 class="text-3xl md:text-4xl font-bold mb-4">Szolgáltatásaink és Áraink</h3>
-            <p class="text-slate-500 max-w-xl mx-auto">Frissített 2026-os árlista a legmagasabb minőségű kertészeti szolgáltatásokhoz.</p>
+            <h3 class="text-3xl md:text-4xl font-bold mb-4">Átlátható Árlistánk</h3>
+            <p class="text-slate-500 max-w-xl mx-auto">Nincsenek rejtett költségek. Csak tiszta, elvégzett munka.</p>
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition group">
-                <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-green-600 transition">
-                    <i class="fa-solid fa-scissors text-green-600 group-hover:text-white text-2xl"></i>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-scissors text-green-600 text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold mb-2">Fűnyírás</h4>
-                <p class="text-slate-500 mb-6">Precíziós vágás akkumulátoros gépekkel.</p>
-                <div class="text-3xl font-black text-green-700">0.6 RON <span class="text-sm text-slate-400 font-normal">/ m²</span></div>
+                <p class="text-slate-500 mb-4 text-sm">Precíziós vágás, szegélynyírással és tisztítással.</p>
+                <div class="text-2xl font-black text-green-700">0.6 RON <span class="text-sm text-slate-400 font-normal">/ m²</span></div>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition group text-white bg-slate-800">
-                <div class="w-14 h-14 bg-green-500 rounded-lg flex items-center justify-center mb-6">
-                    <i class="fa-solid fa-wind text-white text-2xl"></i>
+            <div class="bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-700 text-white">
+                <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-wind text-white text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold mb-2">Gyepszellőztetés</h4>
-                <p class="text-slate-500 mb-6">Mélyreható tisztítás és talajlazítás.</p>
-                <div class="text-3xl font-black text-green-700">1.8 RON <span class="text-sm text-slate-400 font-normal">/ m²</span></div>
+                <p class="text-slate-400 mb-4 text-sm">Késes mélytisztítás a pázsit megfiatalításához.</p>
+                <div class="text-2xl font-black text-green-400">1.8 RON <span class="text-sm text-slate-300 font-normal">/ m²</span></div>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition group">
-                <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-green-600 transition">
-                    <i class="fa-solid fa-tree text-green-600 group-hover:text-white text-2xl"></i>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-tree text-green-600 text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold mb-2">Fa metszés</h4>
-                <p class="text-slate-500 mb-6">Szakszerű alakító és ifjító metszés.</p>
-                <div class="text-3xl font-black text-green-700">130 RON <span class="text-sm text-slate-400 font-normal">/ fa</span></div>
+                <p class="text-slate-500 mb-4 text-sm">Alakító és egészségügyi metszés profi szakemberekkel.</p>
+                <div class="text-2xl font-black text-green-700">130 RON <span class="text-sm text-slate-400 font-normal">/ fa</span></div>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                <h4 class="font-bold text-lg mb-4 text-slate-400 uppercase tracking-widest">Kiegészítő díjak</h4>
-                <ul class="space-y-4">
-                    <li class="flex justify-between border-b pb-2"><span>Sövénynyírás</span> <span class="font-bold">95 RON / óra</span></li>
-                    <li class="flex justify-between border-b pb-2"><span>Lombgyűjtés</span> <span class="font-bold">50 RON / zsák</span></li>
-                    <li class="flex justify-between border-b pb-2"><span>Zöldhulladék szállítás</span> <span class="font-bold">40 RON / zsák</span></li>
-                    <li class="flex justify-between"><span>Tápanyag utánpótlás</span> <span class="font-bold">70 RON / alk</span></li>
-                </ul>
+            <div class="md:col-span-2 lg:col-span-3 bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
+                <h4 class="text-center text-xl font-bold mb-8 uppercase tracking-widest text-slate-400">További szolgáltatásaink</h4>
+                <div class="grid md:grid-cols-2 gap-x-12 gap-y-4">
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="font-medium">Sövénynyírás</span>
+                        <span class="font-bold text-green-700">95 RON / óra</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="font-medium">Tápanyag utánpótlás</span>
+                        <span class="font-bold text-green-700">70 RON / alkalom</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="font-medium">Lombgyűjtés</span>
+                        <span class="font-bold text-green-700">50 RON / zsák</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="font-medium">Zöldhulladék elszállítás</span>
+                        <span class="font-bold text-green-700">40 RON / zsák</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="foglalas" class="py-24 bg-slate-100">
+    <section id="foglalas" class="py-24 bg-green-50">
         <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
-                <div class="md:w-1/3 bg-green-700 p-12 text-white">
-                    <h3 class="text-3xl font-bold mb-6">Foglaljon időpontot!</h3>
-                    <p class="opacity-80 mb-8">Válassza ki a kívánt szolgáltatást, és kollégáink 24 órán belül visszahívják.</p>
-                    <div class="space-y-4">
-                        <p><i class="fa-solid fa-phone mr-3 text-yellow-400"></i> +40 7xx xxx xxx</p>
-                        <p><i class="fa-solid fa-location-dot mr-3 text-yellow-400"></i> Erdély régió</p>
+            <div class="max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+                <div class="lg:w-1/3 bg-green-700 p-12 text-white flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-6">Kérjen Időpontot</h3>
+                        <p class="opacity-80 mb-10 leading-relaxed">Töltse ki az űrlapot, és csapatunk 24 órán belül visszahívja a részletekkel és a pontos felméréssel kapcsolatban.</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-phone"></i></div>
+                            <span>+40 7454555xx</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-envelope"></i></div>
+                            <span>aronmathe7@gmail.com</span>
+                        </div>
                     </div>
                 </div>
-                <div class="md:w-2/3 p-12">
-                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="lg:w-2/3 p-12">
+                    <form action="#" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="md:col-span-2">
-                            <label class="block text-sm font-bold mb-2 uppercase">Szolgáltatás típusa</label>
-                            <select class="w-full p-4 border rounded-xl bg-slate-50 focus:ring-2 focus:ring-green-500 outline-none transition">
+                            <label class="block text-xs font-bold mb-2 uppercase text-slate-400">Válasszon szolgáltatást</label>
+                            <select name="service" class="w-full p-4 border rounded-xl bg-slate-50 focus:ring-2 focus:ring-green-500 outline-none transition appearance-none">
                                 <option>Fűnyírás (0.6 RON/m²)</option>
                                 <option>Gyepszellőztetés (1.8 RON/m²)</option>
                                 <option>Fa metszés (130 RON/fa)</option>
                                 <option>Sövénynyírás (95 RON/óra)</option>
+                                <option>Tápanyag utánpótlás (70 RON/alk)</option>
+                                <option>Lombgyűjtés (50 RON/zsák)</option>
+                                <option>Zöldhulladék szállítás (40 RON/zsák)</option>
+                                <option>Komplett tavaszi csomag</option>
                             </select>
                         </div>
                         <div>
-                            <label class="block text-sm font-bold mb-2 uppercase">Név</label>
-                            <input type="text" placeholder="Gipsz Jakab" class="w-full p-4 border rounded-xl bg-slate-50 focus:ring-2 focus:ring-green-500 outline-none">
+                            <label class="block text-xs font-bold mb-2 uppercase text-slate-400">Az Ön neve</label>
+                            <input type="text" name="name" placeholder="Példa János" class="w-full p-4 border rounded-xl bg-slate-50 focus:ring-2 focus:ring-green-500 outline-none" required>
                         </div>
                         <div>
-                            <label class="block text-sm font-bold mb-2 uppercase">Telefonszám</label>
-                            <input type="tel" placeholder="+40..." class="w-full p-4 border rounded-xl bg-slate-50 focus:ring-2 focus:ring-green-500 outline-none">
+                            <label class="block text-xs font-bold mb-2 uppercase text-slate-400">Telefonszám</label>
+                            <input type="tel" name="phone" placeholder="+40..." class="w-full p-4 border rounded-xl bg-slate-50 focus:ring-2 focus:ring-green-500 outline-none" required>
                         </div>
                         <div>
-                            <label class="block text-sm font-bold mb-2 uppercase">Kert mérete (m²)</label>
-                            <input type="number" placeholder="pl. 500" class="w-full p-4 border rounded-xl bg-slate-50 focus:ring-2 focus:ring-green-500 outline-none">
+                            <label class="block text-xs font-bold mb-2 uppercase text-slate-400">Kert mérete (m²)</label>
+                            <input type="number" name="size" placeholder="pl. 500" class="w-full p-4 border rounded-xl bg-slate-50 focus:ring-2 focus:ring-green-500 outline-none">
                         </div>
                         <div>
-                            <label class="block text-sm font-bold mb-2 uppercase">Kívánt dátum</label>
-                            <input type="date" class="w-full p-4 border rounded-xl bg-slate-50 focus:ring-2 focus:ring-green-500 outline-none">
+                            <label class="block text-xs font-bold mb-2 uppercase text-slate-400">Kívánt időpont</label>
+                            <input type="date" name="date" class="w-full p-4 border rounded-xl bg-slate-50 focus:ring-2 focus:ring-green-500 outline-none">
                         </div>
-                        <button class="md:col-span-2 bg-green-600 text-white font-bold py-5 rounded-xl hover:bg-green-700 transition shadow-lg shadow-green-200 uppercase tracking-widest mt-4">Küldés és Időpontfoglalás</button>
+                        <button type="submit" class="md:col-span-2 bg-green-600 text-white font-bold py-5 rounded-xl hover:bg-green-700 transition shadow-lg shadow-green-200 uppercase tracking-widest mt-4">Küldés és Foglalás</button>
                     </form>
                 </div>
             </div>
@@ -126,9 +155,12 @@
     </section>
 
     <footer class="py-12 bg-slate-900 text-slate-500 text-center">
-        <p>&copy; 2026 Mow-mentum Kertgondozás. Minden jog fenntartva.</p>
+        <div class="mb-4">
+            <i class="fa-solid fa-leaf text-2xl text-green-800"></i>
+        </div>
+        <p class="text-sm tracking-widest uppercase">&copy; 2026 Mow-mentum Kertgondozás</p>
+        <p class="text-xs mt-2 font-light">Csendes. Profi. Fenntartható.</p>
     </footer>
 
 </body>
-
 </html>
